@@ -31,3 +31,18 @@ szoveg = input ("Adjon meg egy számot: ")
 print(szoveg)
 
 # HF Pdf 8-13
+# szekvencia - utasítások sorozata
+# szelekció - elágazás 
+# Iterácioó - ciklus, ismétlés
+
+
+# HF megoldás
+
+sec = 3923
+# 1 óra 5 perc 23 másodperc
+#3600 + 300 + 23
+ora = sec // 3600   
+perc = (sec - ora * 3600) // 60
+#mp =
+print (ora,"óra")
+print (perc,"perc")
