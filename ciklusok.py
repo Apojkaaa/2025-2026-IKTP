@@ -65,4 +65,3 @@ ujszoveg =" "
 for index in range(-1, -n-1, -1):
     ujszoveg += szoveg[index]
 print(ujszoveg)
-#hf 17-21
