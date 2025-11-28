@@ -1,17 +1,21 @@
 import random
 
-gondolt_szam =random.randint(10,99)
 
-print("Melyik kétjegyű számra goonolok")
-szam =int(input("Szám: "))
-if(szam >gondolt_szam):
-    print("A szám nagyobb mint a gondolt szám.")
+szoveg = input("Adjon meg egy szöveget: ")
+betu = input ("Adjon meg egy betűt:")
 
-while(szam !=gondolt_szam):
-    if(szam > gondolt_szam):
-        print("A szám nagyobb mint a gondolt szám")
-    elif(szam < gondolt_szam):
-        print("A szám kisebb mint a gondolt szám")
-    else:
-        print("Eltaláltad")
-    szam = int(input("Probálkozz még egyszer: "))
+index = 0
+while(index < len(szoveg) and  szoveg[index] != betu):
+    #index = index + 1
+    index += 1
+print(index)
+
+if(index < len(szoveg)):
+    #for index in range(0,len(szoveg),1):
+    db = 0
+    for karakter in szoveg:
+        if(karakter == betu):
+            db+=1
+    print(db)
+else:
+    print("Nincs az adott betű a szövegben")

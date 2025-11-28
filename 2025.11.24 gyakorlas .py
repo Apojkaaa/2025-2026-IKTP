@@ -1,0 +1,26 @@
+import random
+
+gondolt_szam = random.randint(10,99)
+probalkozasok = 1
+print("Melyik kétjegyű számra gondoltam?")
+szam = int(input("Szám: "))
+
+
+while(szam != gondolt_szam):
+    if(szam >  9 and szam < 100 ):
+        if(szam > gondolt_szam):
+            print("A szám nagyobb mint a gondolt szám.")
+        elif(szam < gondolt_szam):
+            print("A szám kisebb mint a gondolt szám.")
+        probalkozasok += 1
+    else:
+        print("Nem kétjegyű számot adott meg")
+    print(str(probalkozasok)+", Próbálkozás")
+    szam = int(input("Probálkozz még egyszer: "))
+
+print("Eltaláltad")
+print("próbálkozások száma :", probalkozasok)
+
+# Írassa ki hany db probalkozas volt!
+# Figyeljen arra hogyha nem kétjegyű számot adott meg, az ne legyen új próbálkozás, és figyelmeztesse a felhasználót!
+# Minden szám bekérésénél írja ki az aktuális próbálkozások számát!
