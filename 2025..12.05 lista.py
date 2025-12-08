@@ -54,3 +54,16 @@ if (j<len(szoveg)/2):
     print("A szoveg nem palindrom")
 else:
     print("A szoveg palindrom")
+szamok = []
+
+for i in range(13):
+    szam = int(input(f"{i+1}. szám: "))
+    szamok.append(szam)
+
+atlag = sum(szamok) / len(szamok)
+paros_db = sum(1 for x in szamok if x % 2 == 0)
+van_null = 0 in szamok
+
+print(f"Átlag: {atlag}")
+print(f"Páros számok száma: {paros_db}")
+print("Van benne 0." if van_null else "Nincs benne 0.")
