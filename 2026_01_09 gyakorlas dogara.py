@@ -10,7 +10,7 @@ import math
 # lista = []
 # print(szam1)
 # if szam1 % 2 == 0:
-
+összeg = 0
 kartyak = []
 
 for i in range (0,30,1):
@@ -26,3 +26,15 @@ for i in range (0,30,1):
     szam = elso * 100 + masodik * 10 + harmadik
     kartyak.append(szam)
 print(kartyak)
+
+for i in range(1,len(kartyak), 2):
+    #print(kartyak[i])
+    összeg += kartyak[i]
+átlag = összeg / 15
+print(round(átlag,2))
+
+nagyobb = 0
+for i in range(0,len(kartyak),2):
+    if kartyak[i]>380:
+        nagyobb += 1
+print(nagyobb)
