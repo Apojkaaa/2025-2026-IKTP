@@ -16,3 +16,7 @@ def pozitivDb(szamokLista):
         if (szamokLista[i]>1):
             darab +=1
     return darab
+
+#irjon egy függvényt ami megadja a legnagyobb szám indexét
+#irjon egy függvényt ami megadja a lista elemeinek az átlagát 
+# irjon egy függvény ami bármilyen lista elemeire kiszámolja a pozitiv szamok atlagat
