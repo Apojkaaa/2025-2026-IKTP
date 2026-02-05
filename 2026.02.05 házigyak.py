@@ -36,6 +36,22 @@ def vaneMaxpontos(lista):
 def listaTerjedelme(lista):
     maximum = listaMaximuma(lista)
     minimum = listaMinimuma(lista)
+def dontobejutottakdb(lista):
+    db = 0
+    for i in range(0,len(lista),1):
+        ponthatar = 140 
+        if(lista [i] >= ponthatar):
+            db += 1
+    return db
+def dontobejutottakdb(lista):
+    i=0
+    while(i<len(lista) and lista[i] != 50):
+        i+=1
+    vane =i<len(lista)
+    if (vane):
+        return i
+    else:
+        return -1
 def main():
     pontok = listafeltoltes()
     print(pontok)
@@ -51,4 +67,14 @@ def main():
         print("Van max pontos")
     else:
         print("Nincs max pontos")
+    # 5. feladat 
+    darab =dontobejutottakdb(pontok)
+    print(darab)
+    #6 feladat
+    index =ertek50index(pontok)
+    if(index == -1):
+        print("nincs 50 pontos dolgozat a versenyen")
+    else:
+        #print("A",str(index),"van az 50 pontos dolgozat")
+        print(f"A", (index),"van az 50 pontos doga")
 main()
