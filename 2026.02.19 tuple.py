@@ -57,4 +57,5 @@ def main():
     # szilva 13 300
     # cseresznye 8 1200
     # meggy 6 1150
+    st ="ABC123 Kis Pista KJ-6746896859462 1992_03_10"
 main()
