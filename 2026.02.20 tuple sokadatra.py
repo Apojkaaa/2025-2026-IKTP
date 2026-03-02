@@ -27,3 +27,6 @@ def main():
     #irjon egy fugvenyt ami visszadja az osszetett szerkezethbol hogy hany mazsa gyumi van 
     osszeg =Mazsaosszegzes()
 main()
+#hf irjon egy fuggvenyt ami megadja a legdaragabb gyumolcs nevet
+#irjon egy fuggvyent ami beker a felhasznalotol egy gyumolcsot es ha van ilyen gyumi akkor kiirja az adatait 
+#ha nincs ilyen adat akkor kiirja hogy nincs ilyen gyumolcs
