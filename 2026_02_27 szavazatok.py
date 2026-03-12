@@ -68,7 +68,6 @@ def maximumSzavazatok(adatok):
     return maxe
 def feladat6(adatok):
     maxe =maximumSzavazatok(adatok)
-    for i in range(len(adatok)):
         if(adatok[i][1] == maxe):
             print(f{"adatok[i][2]} {adatok[i][3] } -{adatok [1][4]} ")
 def main():
